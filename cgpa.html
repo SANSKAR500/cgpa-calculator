@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/cgpa.css">
+    <title>CGPA Calculator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>GP Calculator</h1>
+        <table id="table" class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Unit Load</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+            <tfoot id="tfoot"></tfoot>
+        </table>
+        <div class="row">
+            <div class="col">
+                <!-- Updated button -->
+                <input id="calc-gp" class="btn btn-success" type="button" value="Calculate GP">
+            </div>
+            <div class="col">
+                <input id="clear" class="btn btn-warning" type="button" value="Clear">
+            </div>
+        </div>
+        <div class="col">
+            <input id="course-code" class="form-control" type="text" placeholder="Course Code">
+        </div>
+        <div class="col">
+            <input id="unit-load" class="form-control" type="number" placeholder="Unit Load" min="1" max="15">
+        </div>
+        <div class="col">
+            <select id="grade" class="form-control">
+                <option value="">Grade</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+            </select>
+        </div>
+        <div class="col">
+            <input id="add" class="btn btn-primary" type="button" value="Add">
+        </div>
+    </div>
+    <script src="/cgpa.js"></script>
+</body>
+</html>
